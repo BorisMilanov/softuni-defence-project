@@ -1,8 +1,8 @@
 import React from 'react'
-import { HomePage } from '../Styles/HomePage.style'
+import { HomeImg } from '../Styles/HomePage.style'
 export default function Home() {
     return (
+       <HomeImg/>
         
-        <HomePage>lorem</HomePage>
     )
 }
