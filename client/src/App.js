@@ -2,11 +2,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import './App.css';
 
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import Home from './Components/Home';
+import Navbar from './Pages/Navbar';
+import Footer from './Pages/Footer';
+import Home from './Pages/Home';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Auth from './Auth/Auth';
+import Auth from './Pages/Auth/Register';
 
 function App() {
   return (

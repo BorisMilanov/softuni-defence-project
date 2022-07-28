@@ -38,6 +38,14 @@ export default function (props) {
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Sign In</h3>
           <div className="form-group mt-3">
+              <label>Username</label>
+              <input
+                type="user"
+                className="form-control mt-1"
+                placeholder="Enter username"
+              />
+            </div>
+          <div className="form-group mt-3">
             <label>Email address</label>
             <input
             value={email}
@@ -47,6 +55,7 @@ export default function (props) {
               placeholder="Enter email"
             />
           </div>
+          
           <div className="form-group mt-3">
             <label>Password</label>
             <input
