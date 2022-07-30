@@ -21,7 +21,7 @@ function Navbar() {
                     <NavbarLink to="/">Home</NavbarLink>
                     <NavbarLink to="/contact">Contact Us</NavbarLink>
                     <NavbarLink to="/about">About Us</NavbarLink>
-                    <NavbarLinkExtended to="/auth"> Register</NavbarLinkExtended>
+                    <NavbarLinkExtended to="/register"> Register</NavbarLinkExtended>
                     <OpenLinksButton onClick={() => {
                         setExtendNavbar((curr) => !curr)
                     }}>{extendNavbar ? <>&#10005;</> : <> &#8801;</>}</OpenLinksButton>
@@ -35,7 +35,7 @@ function Navbar() {
             <NavbarLinkExtended to="/products"> Products</NavbarLinkExtended>
             <NavbarLinkExtended to="/contact"> Contact Us</NavbarLinkExtended>
             <NavbarLinkExtended to="/about"> About Us</NavbarLinkExtended>
-            <NavbarLinkExtended to="/auth"> Register</NavbarLinkExtended>
+            <NavbarLinkExtended to="/register"> Register</NavbarLinkExtended>
         </NavbarExtendedContainer>)}
     </NavbarContainer>)
 }

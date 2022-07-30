@@ -6,6 +6,7 @@ import Navbar from './Pages/Navbar';
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Register from './Pages/Auth/Register';
 import Auth from './Pages/Auth/Register';
 
 function App() {
@@ -14,9 +15,9 @@ function App() {
     <Router>
       <Navbar />
         <Routes> <Route path="/"  element={<Home />}></Route>
+        <Route path="/register" element={<Register />}></Route>
         <Route path="/contact"></Route>
         <Route path="/about"></Route>
-        <Route path="/auth" element={<Auth />}/>
         </Routes>
       <Footer/>
     </Router>

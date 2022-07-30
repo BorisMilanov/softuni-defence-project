@@ -7,7 +7,7 @@ import { useState } from 'react'
 export default function (props) {
   // const history = useHistory()
 
-
+  const [username, setUsername] = useState('')
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
   async function registerUser(event) {
@@ -19,7 +19,7 @@ export default function (props) {
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
-				
+				username,
 				email,
 				password,
 			}),
@@ -40,7 +40,9 @@ export default function (props) {
           <div className="form-group mt-3">
               <label>Username</label>
               <input
+              value={username}
                 type="user"
+                onChange={(e) => setUsername(e.target.value)}
                 className="form-control mt-1"
                 placeholder="Enter username"
               />
